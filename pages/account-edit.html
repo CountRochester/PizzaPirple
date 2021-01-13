@@ -1,0 +1,49 @@
+<article>
+  <div class="dialog">
+    <div class="dialogContent">
+      <div class="dialogCaption">
+        <h1 class="title">Edit your account data</h1>
+      </div>
+
+      <form id="accountEdit" action="/api/users" method="POST" class="dialogForm">
+        <input type="hidden" name="_method" value="PUT" />
+        <div class="formError"></div>
+        <div class="formSuccess"></div>
+
+        <text-input type="text" name="firstName" placeholder="John">First Name</text-input>
+        <text-input type="text" name="lastName" placeholder="Smith">Last Name</text-input>
+        <text-input type="email" name="email" placeholder="new-user@maildomain.com">E-mail</text-input>
+        <text-input type="text" name="address" placeholder="A very nice street in your lovely city">Address</text-input>
+
+        <div class="formInput actionsGroup">
+          <button-component type="submit" color="green">Save changes</button-component>
+        </div>
+      </form>
+
+      <form id="passwordEdit" action="/api/users" method="POST" class="dialogForm">
+        <input type="hidden" name="_method" value="PUT" />
+        <input type="email" name="email" hidden />
+        <div class="formError"></div>
+        <div class="formSuccess"></div>
+
+        <text-input type="password" name="password" placeholder="Make it a good one!">Choose a Password</text-input>
+        <text-input type="password" name="passwordRetype" placeholder="Make it a good one!">Retype the password
+        </text-input>
+
+        <div class="formInput actionsGroup">
+          <button-component type="submit" color="blue">Change password</button-component>
+        </div>
+      </form>
+
+      <form id="deleteAccount" action="/api/users" method="GET" class="dialogForm">
+        <input type="hidden" name="_method" value="DELETE" />
+        <input type="email" name="email" hidden />
+        <div class="formError"></div>
+        <div class="formInput actionsGroup">
+          <button-component type="submit" color="red">Delete account</button-component>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</article>

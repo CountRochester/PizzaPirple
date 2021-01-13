@@ -1,0 +1,31 @@
+<article>
+  <div class="dialog">
+    <div class="dialogContent">
+      <div class="dialogCaption">
+        <h1 class="title">Enter your credentials for payment</h1>
+        <h2 class="sub-title">You are about to make the payment</h2>
+        <h3 class="total-payment"></h3>
+      </div>
+
+      <form id="newOrder" action="/api/order" method="POST" class="dialogForm">
+        <!-- <input type="hidden" name="_method" value="PUT" /> -->
+        <div class="formError"></div>
+        <div class="formSuccess"></div>
+
+        <text-input type="text" name="number" placeholder="0000 0000 0000 0000">Card number</text-input>
+        <text-input type="text" name="exp_month" maxlength="2" placeholder="12">
+          Card expiration month
+        </text-input>
+        <text-input type="text" name="exp_year" maxlength="4" placeholder="2025">Card expiration
+          year</text-input>
+        <text-input type="password" name="cvc" maxlength="3" placeholder="Any digit from the back of your card">CVC code
+        </text-input>
+
+        <div class="formInput actionsGroup">
+          <button-component type="submit" color="green">Make payment</button-component>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</article>

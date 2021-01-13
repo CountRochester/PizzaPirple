@@ -1,0 +1,12 @@
+# Local config
+/lib/config-dev.js
+
+# Local data files
+/.data/carts/*.json
+/.data/tokens/*.json
+/.data/users/*.json
+/.data/orders/*.json
+
+# Local https files
+/https/*.pem
+/https/*.rnd

@@ -1,0 +1,21 @@
+<div class="dialog">
+  <div class="dialogContent">
+    <div class="dialogCaption">
+      <h1 class="title">Create your account</h1>
+    </div>
+    <form id="accountCreate" action="/api/users" method="POST" class="dialogForm">
+      <div class="formError"></div>
+      <text-input type="text" name="firstName" placeholder="John">First Name</text-input>
+      <text-input type="text" name="lastName" placeholder="Smith">Last Name</text-input>
+      <text-input type="email" name="email" placeholder="new-user@maildomain.com">E-mail</text-input>
+      <text-input type="text" name="address" placeholder="A very nice street in your lovely city">Address</text-input>
+      <text-input type="password" name="password" placeholder="Make it a good one!">Choose a Password</text-input>
+      <text-input type="checkbox" name="tosAgreement" value="agree">Do you agree to the terms and conditions?
+      </text-input>
+      <div class="formInput actionsGroup">
+        <button-component type="submit" color="green">Create account</button-component>
+      </div>
+    </form>
+  </div>
+</div>
+<script type="module" src="public/app/account-create.js"></script>

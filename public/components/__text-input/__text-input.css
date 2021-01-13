@@ -1,0 +1,120 @@
+* {
+  line-height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #1a1a1a;
+  border-width: 0;
+}
+
+.text-input__input-label,
+.text-input__input-label slot {
+  font-family: Anton, "Courier New", Courier, monospace;
+  font-size: 2rem;
+  /* display: block; */
+  font-weight: normal;
+  margin-top: -4.5rem;
+  user-select: none;
+  position: absolute;
+  z-index: 0;
+}
+
+.text-input__input-label_checkbox,
+.text-input__input-label_checkbox slot {
+  display: inline-block;
+  margin-top: 0;
+  position: sticky;
+  z-index: auto;
+}
+
+.text-input__input:not([type="checkbox"]) {
+  border-style: none;
+  display: block;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid #1a1a1a;
+  font-size: 2rem;
+  width: 40rem;
+  position: relative;
+  z-index: 1;
+}
+
+.text-input__input::placeholder {
+  color: #ffffff00;
+}
+
+.text-input__input:focus::placeholder {
+  color: #797979;
+}
+
+.text-input__input:focus {
+  border-color: #1b73e7;
+  transition: 0.2s linear;
+}
+
+.text-input__input:focus:not([type="checkbox"]) + .text-input__input-label,
+.text-input__input:focus:not([type="checkbox"]) + .text-input__input-label slot {
+  margin-top: -6rem;
+  color: #1b73e7;
+  font-size: 1.2rem;
+  transition: 0.2s linear;
+}
+
+.text-input__input:not(:placeholder-shown)[type="text"] + .text-input__input-label,
+.text-input__input:not(:placeholder-shown)[type="text"] + .text-input__input-label slot {
+  margin-top: -6rem;
+  color: #1b73e7;
+  font-size: 1.2rem;
+  transition: 0.2s linear;
+}
+.text-input__input:not(:placeholder-shown)[type="email"] + .text-input__input-label,
+.text-input__input:not(:placeholder-shown)[type="email"] + .text-input__input-label slot {
+  margin-top: -6rem;
+  color: #1b73e7;
+  font-size: 1.2rem;
+  transition: 0.2s linear;
+}
+.text-input__input:not(:placeholder-shown)[type="password"] + .text-input__input-label,
+.text-input__input:not(:placeholder-shown)[type="password"] + .text-input__input-label slot {
+  margin-top: -6rem;
+  color: #1b73e7;
+  font-size: 1.2rem;
+  transition: 0.2s linear;
+}
+
+.text-input__input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.text-input__input[type="checkbox"]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  bottom: -0.2rem;
+  left: 0;
+  border: 2px solid #555555;
+  border-radius: 3px;
+  background-color: white;
+}
+.text-input__input[type="checkbox"]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid #1b73e7;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 0.3rem;
+  left: 6px;
+}

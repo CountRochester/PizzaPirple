@@ -1,0 +1,12 @@
+{
+  "name": "pizzapirple",
+  "version": "1.0.0",
+  "description": "Simple pizza delivery app",
+  "author": "Gusev Andrey <count_rochester@mail.ru>",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "SET NODE_ENV=development & node index.js",
+    "prod": "SET NODE_ENV=production & node index.js"
+  }
+}

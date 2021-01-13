@@ -1,0 +1,66 @@
+* {
+  line-height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #1a1a1a;
+  border-width: 0;
+}
+
+.button-component__button,
+slot {
+  border-style: solid;
+  border-width: 0.2rem;
+  border-radius: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  min-width: 10rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+}
+
+.button-component__button_green,
+slot {
+  border: #12cc1c;
+  border-style: solid;
+  background-color: #ffffff;
+  transition: 0.2s linear;
+}
+.button-component__button_green:hover {
+  background-color: #12cc1c;
+  color: #ffffff;
+  box-shadow: 0rem 0rem 1rem 0.2rem rgba(4, 247, 4, 0.555);
+}
+
+.button-component__button_blue,
+slot {
+  border: #1b73e7;
+  border-style: solid;
+  background-color: #ffffff;
+  transition: 0.2s linear;
+}
+.button-component__button_blue:hover {
+  background-color: #1b73e7;
+  color: #ffffff;
+  box-shadow: 0rem 0rem 1rem 0.2rem #327ae68e;
+}
+.button-component__button_red,
+slot {
+  border: #eb1123;
+  border-style: solid;
+  background-color: #ffffff;
+  transition: 0.2s linear;
+}
+.button-component__button_red:hover {
+  background-color: #eb1123;
+  color: #ffffff;
+  box-shadow: 0rem 0rem 1rem 0.2rem #ff00008e;
+}

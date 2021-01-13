@@ -1,0 +1,102 @@
+* {
+  line-height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #1a1a1a;
+  border-width: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  min-width: 70rem;
+}
+
+.cart-item__actionGroup {
+  display: flex;
+  width: 25rem;
+  justify-content: space-between;
+}
+
+.cart-item__name {
+  font-family: Roboto, "Courier New", Courier, monospace;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.cart-item__buttonGroup {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.cart-item__incrementButton,
+.cart-item__decrementButton {
+  outline: none;
+  width: 2.2rem;
+  border-style: solid;
+  border-width: 2px;
+  border-color: brown;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  color: brown;
+}
+
+.cart-item__incrementButton:hover,
+.cart-item__decrementButton:hover {
+  color: white;
+  background-color: brown;
+}
+.cart-item__incrementButton:active,
+.cart-item__decrementButton:active {
+  outline: none;
+  background-color: rgb(78, 6, 18);
+  border-color: rgb(0, 0, 0);
+}
+
+.cart-item__incrementButton:focus,
+.cart-item__incrementButton:active,
+.cart-item__decrementButton:focus,
+.cart-item__decrementButton:active {
+  outline: none;
+}
+
+.cart-item__price {
+  font-family: Roboto, "Courier New", Courier, monospace;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.cart-item__price::before {
+  content: "x";
+}
+
+.cart-item__total {
+  font-family: Roboto, "Courier New", Courier, monospace;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 3rem;
+}
+
+.cart-item__total::before {
+  content: "$";
+}
+
+.cart-item__count {
+  border-style: none;
+  width: 30px;
+  padding: 0.1rem 0;
+  font-family: Roboto, "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+}

@@ -1,0 +1,71 @@
+@import "./fonts";
+// @import "./manu-item";
+@import "./reset";
+@import "./main";
+@import "./restorant-menu";
+@import "./dialog";
+@import "./menu";
+
+.categoryMenu {
+  display: flex;
+  height: 100%;
+  // background-color: #ffffff5b;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-evenly;
+  padding-top: 20px;
+}
+
+.main-caption {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: xx-large;
+  margin-bottom: 2rem;
+}
+.main-subtitle {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: large;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.main-text {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: medium;
+  text-align: center;
+}
+
+.cart-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.cart-total {
+  font-family: Roboto, "Courier New", Courier, monospace;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-right: 1rem;
+  align-self: flex-end;
+}
+
+.cart-total::before {
+  content: "Total: $";
+}
+
+.divider {
+  height: 1px;
+  background-color: black;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.emptyCart {
+  font-family: Roboto, "Courier New", Courier, monospace;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-right: 1rem;
+  align-self: center;
+}

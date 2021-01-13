@@ -1,0 +1,15 @@
+<div class="dialog">
+  <div class="dialogContent">
+    <div class="dialogCaption">
+      <h1 class="title">Login to your account</h1>
+    </div>
+    <form id="sessionCreate" action="/api/tokens" method="POST" class="dialogForm">
+      <div class="formError"></div>
+      <text-input type="email" name="email" placeholder="new-user@maildomain.com">E-mail</text-input>
+      <text-input type="password" name="password" placeholder="Make it a good one!">Choose a Password</text-input>
+      <div class="formInput actionsGroup">
+        <button-component type="submit" color="blue">Login</button-component>
+      </div>
+    </form>
+  </div>
+</div>

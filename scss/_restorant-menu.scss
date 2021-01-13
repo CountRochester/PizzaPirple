@@ -1,0 +1,28 @@
+.restorantMenu {
+  display: flex;
+  flex-direction: row;
+  li {
+    list-style-type: none;
+    padding: 1rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    a {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-weight: bold;
+      font-size: medium;
+    }
+    &:hover {
+      background-color: #921616;
+      cursor: pointer;
+      a {
+        color: #f0d9d9;
+      }
+    }
+    &:focus {
+      background-color: #921616;
+      a {
+        color: #f0d9d9;
+      }
+    }
+  }
+}

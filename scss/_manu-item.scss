@@ -1,0 +1,48 @@
+.menuItem {
+  flex-basis: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  box-shadow: 0 1.4rem 2.8rem rgba(0,0,0,0.25), 0 1rem 1rem rgba(0,0,0,0.22);
+
+  &__itemName {
+    font-family: Roboto, 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #000000;
+  };
+
+  &__itemImage {
+      width: 100%;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+  };
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+  };
+
+  &__itemDescription {
+    font-family: Castoro, 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 1.8rem;
+  };
+
+  &__itemPrice {
+    font-family: Roboto, 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 2rem;
+  };
+  
+  &__itemPrice::before {
+    content: '$';
+  };
+}
